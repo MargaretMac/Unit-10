@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+</head>
+<body>
+<div class="grid-container">
+	<H1>Monks's Cafe</H1>
+	<H2>The Coffee Shop</H2>
+	<img src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg">
+
+	<H2>Reservations</H2>
+
+<div class="grid-x grid-margin-x">
+
+
+	<div class="auto cell">
+		<H3>Make a Reservation</H3>
+		<form id="reservation">
+   			<input id="name" type="text" placeholder="Name" name="name">
+   			<input id="date" type="date" name="date">
+   			<input id="time" type="time"> 
+     			<button>Confirm Reservation</button>
+		</form>
+
+	</div>
+
+	<div class="auto cell">
+	<H3>Existing Reservations</H3>
+
+		<table id="reservations">
+			<thead>
+			<th>Name</th>
+			<th>Day</th>
+			<th>Time</th>
+			</thead>
+			<tbody></tbody>
+		</table>
+
+	</div> 
+
+
+
+
+</div>
+	<h2>Come Dine with Us</h2>
+<iframe
+  width="100%"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDS3QYwB6oZIF7C0Pc3ev9jcUpv5CZX9cU
+    &center=40.8054491,-73.9654415
+    &q=restaurant" allowfullscreen>
+</iframe>
+
+
+	<h2>Customer Reviews</h2>
+
+	<div class="grid-x"> 
+		<div class="auto cell">
+		<img src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg">			
+		</div>
+	<div class="grid-x">
+		<blockquote>
+			“Big lettuce, big carrots, tomatoes like volleyballs.”
+			<br>
+		— Jerry Seinfeld, on The BIG Salad		
+
+	</blockquote>
+
+
+		
+
+	</div>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+  var config = {
+    apiKey: "AIzaSyDPYYrweQoi9dVZ_JFbdWfB9okN_Ck0qwk",
+    databaseURL: "https://unit-10.firebaseio.com/",
+
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>
